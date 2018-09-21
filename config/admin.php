@@ -37,7 +37,7 @@ return [
     /*
      * Laravel-Admin 页面标题
      */
-    'title' => 'Laravel Shop 管理后台',
+    'title' => 'Laravel Shop Admin',
 
     /*
      * 是否使用 https

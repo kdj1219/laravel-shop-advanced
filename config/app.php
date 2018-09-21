@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'Asia/Shanghai',
+    'timezone' => 'America/Los_Angeles',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,9 +78,9 @@ return [
     |
     */
 
-    'locale' => 'zh-CN',
+    'locale' => 'en',
 
-    'faker_locale' => 'zh_CN',
+    'faker_locale' => 'en',
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
