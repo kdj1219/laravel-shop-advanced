@@ -28,10 +28,10 @@ class EmailVerificationNotification extends Notification implements ShouldQueue
         Cache::set('email_verification_'.$notifiable->email, $token, 30);
         $url = route('email_verification.verify', ['email' => $notifiable->email, 'token' => $token]);
         return (new MailMessage)
-                    ->greeting($notifiable->name.'您好：')
-                    ->subject('注册成功，请验证您的邮箱')
-                    ->line('请点击下方链接验证您的邮箱')
-                    ->action('验证', $url);
+                    ->greeting('Hello, '.$notifiable->name)
+                    ->subject('Registration is successful. Please verify your email.')
+                    ->line('Please click the link below to verify your email.')
+                    ->action('Verify', $url);
     }
 
     public function toArray($notifiable)

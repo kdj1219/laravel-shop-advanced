@@ -17,7 +17,7 @@ class CheckIfEmailVerified
     {
         if (!$request->user()->email_verified) {
             if ($request->expectsJson()) {
-                return response()->json(['msg' => '请先验证邮箱'], 400);
+                return response()->json(['msg' => 'Please verify the email first.'], 400);
             }
             return redirect(route('email_verify_notice'));
         }
