@@ -9,7 +9,7 @@ class InternalException extends Exception
 {
     protected $msgForUser;
 
-    public function __construct(string $message, string $msgForUser = '系统内部错误', int $code = 500)
+    public function __construct(string $message, string $msgForUser = 'System Internal Error', int $code = 500)
     {
         parent::__construct($message, $code);
         $this->msgForUser = $msgForUser;
