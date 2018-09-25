@@ -49,6 +49,8 @@ Vue.component('select-district', {
       }
       // 将地区列表设为当前城市下的地区
       this.districts = addressData[newVal];
+      if(this.districts === undefined) return;
+
       // 如果当前选中的地区不在当前城市下，则将选中地区清空
       if(!this.districts[this.districtId]) {
         this.districtId = '';
